@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Public Safety & Awareness</title>
+
+  <style>
+    :root {
+      --primary: #0f2a44;
+      --secondary: #f4f6f8;
+      --accent: #0a7cff;
+      --text-dark: #1a1a1a;
+      --text-light: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #123b63);
+      color: var(--text-light);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      opacity: 0.9;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .cta-btn:hover {
+      background: #055fcc;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #dbe5ef;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <h1>Safety Through Awareness</h1>
+    <p>
+      Building responsible behavior, informed decisions,  
+      and safer communities through education and public awareness.
+    </p>
+    <a href="#mission" class="cta-btn">Learn More</a>
+  </header>
+
+  <!-- MISSION SECTION -->
+  <section id="mission">
+    <div class="section-title">
+      <h2>Our Focus</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Public Awareness</h3>
+        <p>
+          Empowering citizens with knowledge that encourages safer choices
+          on roads and in everyday life.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Responsible Behavior</h3>
+        <p>
+          Promoting habits that protect lives, reduce risk,
+          and build trust within communities.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Collective Responsibility</h3>
+        <p>
+          Safety is not enforced alone — it grows when institutions
+          and citizens work together.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Clean air. Safe roads. Informed citizens.
+    <span>Awareness today — safer tomorrow.</span>
+  </footer>
+
+</body>
+</html>
