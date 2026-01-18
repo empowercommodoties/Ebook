@@ -1,173 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Public Safety & Awareness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root {
-      --primary: #0f2a44;
-      --secondary: #f4f6f8;
-      --accent: #0a7cff;
-      --text-dark: #1a1a1a;
-      --text-light: #ffffff;
-    }
+<title>Empower Commodities | Free eBook Download</title>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Arial, sans-serif;
-    }
+<style>
+:root{
+  --primary:#0b2b40;
+  --accent:#c89b3c;
+  --light:#f4f7fb;
+  --dark:#1a1a1a;
+}
 
-    body {
-      background: var(--secondary);
-      color: var(--text-dark);
-      line-height: 1.6;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
-    header {
-      background: linear-gradient(135deg, var(--primary), #123b63);
-      color: var(--text-light);
-      padding: 80px 20px;
-      text-align: center;
-    }
+body{
+  background:var(--light);
+  color:var(--dark);
+}
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
+/* HERO */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(135deg,#0b2b40,#133e5c);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 15px;
+}
 
-    header p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
-      opacity: 0.9;
-    }
+.container{
+  background:#fff;
+  max-width:900px;
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.15);
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
 
-    .cta-btn {
-      display: inline-block;
-      padding: 12px 28px;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: transform 0.2s ease, background 0.2s ease;
-    }
+/* LEFT */
+.left{
+  padding:50px 40px;
+  background:linear-gradient(160deg,#0b2b40,#123d5a);
+  color:#fff;
+}
 
-    .cta-btn:hover {
-      background: #055fcc;
-      transform: translateY(-2px);
-    }
+.left h1{
+  font-size:2.3rem;
+  margin-bottom:15px;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.left p{
+  opacity:0.9;
+  margin-bottom:25px;
+  line-height:1.6;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.benefits{
+  list-style:none;
+}
 
-    .section-title h2 {
-      font-size: 2rem;
-      color: var(--primary);
-    }
+.benefits li{
+  margin-bottom:12px;
+  padding-left:20px;
+  position:relative;
+  font-size:0.95rem;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
+.benefits li::before{
+  content:"✔";
+  position:absolute;
+  left:0;
+  color:var(--accent);
+  font-weight:bold;
+}
 
-    .card {
-      background: #fff;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-    }
+/* RIGHT */
+.right{
+  padding:50px 40px;
+}
 
-    .card h3 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
+.right h2{
+  color:var(--primary);
+  margin-bottom:10px;
+}
 
-    .card p {
-      font-size: 0.95rem;
-      opacity: 0.9;
-    }
+.right p{
+  font-size:0.95rem;
+  margin-bottom:25px;
+  opacity:0.85;
+}
 
-    footer {
-      background: var(--primary);
-      color: #dbe5ef;
-      text-align: center;
-      padding: 25px 15px;
-      font-size: 0.9rem;
-    }
+.form-group{
+  margin-bottom:18px;
+}
 
-    footer span {
-      display: block;
-      margin-top: 5px;
-      font-size: 0.8rem;
-      opacity: 0.8;
-    }
-  </style>
-</head>
+.form-group label{
+  display:block;
+  font-size:0.85rem;
+  margin-bottom:6px;
+  font-weight:600;
+}
 
-<body>
+.form-group input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  outline:none;
+  font-size:0.95rem;
+}
 
-  <!-- HERO SECTION -->
-  <header>
-    <h1>Safety Through Awareness</h1>
-    <p>
-      Building responsible behavior, informed decisions,  
-      and safer communities through education and public awareness.
-    </p>
-    <a href="#mission" class="cta-btn">Learn More</a>
-  </header>
+.form-group input:focus{
+  border-color:var(--primary);
+}
 
-  <!-- MISSION SECTION -->
-  <section id="mission">
-    <div class="section-title">
-      <h2>Our Focus</h2>
-    </div>
+.permission{
+  font-size:0.75rem;
+  margin:15px 0;
+  color:#555;
+}
 
-    <div class="cards">
-      <div class="card">
-        <h3>Public Awareness</h3>
-        <p>
-          Empowering citizens with knowledge that encourages safer choices
-          on roads and in everyday life.
-        </p>
-      </div>
+.permission input{
+  margin-right:6px;
+}
 
-      <div class="card">
-        <h3>Responsible Behavior</h3>
-        <p>
-          Promoting habits that protect lives, reduce risk,
-          and build trust within communities.
-        </p>
-      </div>
+.btn{
+  width:100%;
+  padding:14px;
+  background:var(--primary);
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  font-size:1rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
 
-      <div class="card">
-        <h3>Collective Responsibility</h3>
-        <p>
-          Safety is not enforced alone — it grows when institutions
-          and citizens work together.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    Clean air. Safe roads. Informed citizens.
-    <span>Awareness today — safer tomorrow.</span>
-  </footer>
-
-</body>
-</html>
+.btn:hover{
+  backgroun
